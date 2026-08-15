@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Michael's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+</head>
+<body>
+
+    <!-- Top Navigation Header -->
+    <header class="top-header">
+        <nav class="navbar-brand-wrapper">
+            <!-- Brand Logo Link -->
+            <a href="#home" class="brand-logo">
+                <svg class="logo-icon" viewBox="0 0 200 200">
+                    <defs>
+                        <linearGradient id="jmsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#2563eb" />
+                            <stop offset="100%" stop-color="#38bdf8" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="10" width="180" height="180" rx="45" fill="#0f172a" stroke="#334155" stroke-width="6"/>
+                    <path d="M 60,60 L 60,115 A 20,20 0 0,1 20,95" fill="none" stroke="url(#jmsGrad)" stroke-width="14" stroke-linecap="round"/>
+                    <path d="M 85,125 L 85,60 L 115,100 L 145,60 L 145,125" fill="none" stroke="url(#jmsGrad)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="160" cy="120" r="7" fill="#38bdf8" />
+                </svg>
+                <div class="brand-text">
+                    <span class="name">JOHN MICHAEL</span>
+                    <span class="sub">SAN AGUSTIN</span>
+                </div>
+            </a>
+
+            <!-- Tech Stack Carousel -->
+            <div class="tech-carousel" title="Tech Stack">
+                <div class="tech-track">
+                    <!-- Set 1 -->
+                    <img src="img/html5.svg" alt="HTML5" class="tech-icon">
+                    <img src="img/css.svg" alt="CSS3" class="tech-icon">
+                    <img src="img/javascript.svg" alt="JavaScript" class="tech-icon">
+                    <!-- Set 2 -->
+                    <img src="img/html5.svg" alt="HTML5" class="tech-icon">
+                    <img src="img/css.svg" alt="CSS3" class="tech-icon">
+                    <img src="img/javascript.svg" alt="JavaScript" class="tech-icon">
+                    <!-- Duplicate Sets for Smooth Infinite Scroll -->
+                    <img src="img/html5.svg" alt="HTML5" class="tech-icon">
+                    <img src="img/css.svg" alt="CSS3" class="tech-icon">
+                    <img src="img/javascript.svg" alt="JavaScript" class="tech-icon">
+                    <img src="img/html5.svg" alt="HTML5" class="tech-icon">
+                    <img src="img/css.svg" alt="CSS3" class="tech-icon">
+                    <img src="img/javascript.svg" alt="JavaScript" class="tech-icon">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Side Fan Navigation -->
+    <nav class="fan-nav" id="fanNav">
+        <button class="fan-toggle" id="fanToggle" aria-label="Toggle Navigation">
+            <span class="icon">☰</span>
+        </button>
+        <ul class="fan-menu">
+            <li style="--i: 1;"><a href="#home">Home</a></li>
+            <li style="--i: 2;"><a href="#about">About</a></li>
+            <li style="--i: 3;"><a href="#education">Education</a></li>
+            <li style="--i: 4;"><a href="#certificates">Certificates</a></li>
+            <li style="--i: 5;"><a href="#projects">Projects</a></li>
+            <li style="--i: 6;"><a href="#experiences">Experiences</a></li>
+            <li style="--i: 7;"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+<!-- Hero Section (Split Layout) -->
+<header id="home" class="hero-section">
+    <div class="hero-container">
+        <!-- Left Side: Text & CTAs -->
+        <div class="hero-text-content">
+            <div class="badge-pill">
+                <span class="pill-dot"></span> Available for Hire
+            </div>
+            <h1 class="hero-title">
+                John Michael <br>
+                <span class="highlight-text">San Agustin</span>
+            </h1>
+            <p class="hero-subtitle">
+                Information Systems Specialist & Web Developer
+            </p>
+            <p class="hero-description">
+                Cum Laude graduate specializing in Oracle NetSuite administration, systems analysis, and full-stack web solutions.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+
+        <!-- Right Side: Profile Card -->
+        <div class="hero-image-wrapper">
+            <div class="profile-card">
+                <div class="image-twist-wrapper">
+                    <img src="img/nobg-JM.png" alt="John Michael M. San Agustin" class="morph-image">
+                </div>
+                <div class="profile-card-badge">
+                    <span>🎓 Cum Laude Graduate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- About Section -->
+        <section id="about" class="section-card">
+            <h2>About Me</h2>
+            <div class="badge-group">
+                <span class="badge">🎓 Cum Laude Graduate</span>
+                <span class="badge">💻 BS Information Systems</span>
+                <span class="badge">🏫 DFCAMCLP - Batch Salikhaya</span>
+                <span class="badge">⚙️ NetSuite & ERP Operations</span>
+            </div>
+             <p>
+            Detail-oriented and highly motivated Information Systems graduate (<strong>Cum Laude</strong>) from 
+            <strong>Dr. Filemon C. Aguilar Memorial College of Las Piñas (Batch Salikhaya)</strong>, 
+            combining technical acumen, customer operations, and organizational leadership.
+            </p>
+            <p>Proven capability in optimizing enterprise resource planning (ERP) workflows through hands-on Oracle NetSuite administration and full-stack web development. Recognized for balancing rigorous academic achievements with full-time corporate roles, demonstrating exceptional adaptability, technical problem-solving, and cross-functional team coordination.</p>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="section-card">
+            <h2>Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>Bachelor of Science in Information Systems</h3>
+                    <h4>Dr. Filemon C. Aguilar Memorial College of Las Piñas (DFCAMCLP)</h4>
+                    <p><strong>Graduated:</strong> 2026 | <strong>Honors:</strong> Cum Laude</p>
+                    <p>Specialized in systems analysis, database management, and web development. Completed a capstone project on a Smart Grade Monitoring System.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section-card">
+            <h2>Certificates & Courses</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <h3>Finished</h3>
+                    <h4>IT Customer Support Basics</h4>
+                    <p>Completed a foundational course focused on IT ticketing, troubleshooting, and customer support standards.</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Ongoing</h3>
+                    <h4>Cyber Threat Monitoring Level 1</h4>
+                    <p>Currently enrolled in a course covering threat identification, security analysis, and network defense strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section Grid -->
+        <section id="projects" class="section-card">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Smart Grade Monitoring System</h3>
+                    <p>Lead Developer & Systems Analyst for an academic monitoring portal at DFCAMCLP - IT Campus. Orchestrated end-to-end systems analysis, data flow design (DFD), and integrated Role-Based Access Control (RBAC). Deployed and hosted on Hostinger cloud.</p>
+                    <span class="tech-tag">PHP • MySQL • Hostinger • RBAC</span>
+                </div>
+                <div class="project-card">
+                    <h3>Personal Interactive Portfolio</h3>
+                    <p>Modern interactive developer portfolio featuring CSS-based fan navigation, dynamic tech carousel, and an AI chat assistant.</p>
+                    <span class="tech-tag">HTML5 • CSS3 • JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experiences" class="section-card">
+            <h2>Professional Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3>NetSuite & WordPress Administrator (OJT)</h3>
+                    <h4>Top Creamery | Jan 2026 – Jun 2026</h4>
+                    <p>Managed and audited product, inventory, and customer databases within Oracle NetSuite to ensure data integrity. Diagnosed system errors and website performance defects to minimize downtime.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Customer Service Representative</h3>
+                    <h4>Alorica Philippines | Aug 2025 – Jun 2026</h4>
+                    <p>Resolved complex customer inquiries and financial card disputes under tight SLAs while sustaining top-tier Quality Assurance scores . Tracked system bugs and collaborated with leadership to optimize customer retention.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Service Crew</h3>
+                    <h4>McDonald's | Apr 2024 – Jul 2025</h4>
+                    <p>Accelerated order processing in a high-volume environment while maintaining strict health and speed-of-service benchmarks.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section-card">
+            <h2>Get In Touch</h2>
+            <p>I am open to full-time web development, systems analysis, and IT administration opportunities! Feel free to reach out directly.</p>
+            <div class="contact-buttons">
+                <a href="mailto:jmsanagustin.work@gmail.com" class="contact-btn">📧 Send Email</a>
+                <a href="tel:+639385650062" class="contact-btn secondary">📞 Call (+63 938-565-0062)</a>
+                <a href="https://linkedin.com/in/john-michael-san-agustin-b906b51b9" target="_blank" class="contact-btn secondary">🔗 LinkedIn</a>
+            </div>
+        </section>
+
+        <!-- Floating AI Assistant Widget -->
+        <div class="ai-widget-container">
+            <!-- Floating Trigger Button -->
+            <button id="aiToggleBtn" class="ai-toggle-btn" aria-label="Open AI Assistant">
+                <img src="img/logo.svg" alt="JM AI Assistant" class="ai-btn-icon">
+                <span class="ai-btn-pulse"></span>
+            </button>
+
+            <!-- Chat Box Drawer -->
+            <div id="aiChatBox" class="ai-chat-box">
+                <!-- Header -->
+                <div class="ai-chat-header">
+                    <div class="ai-avatar">
+                        <span>🤖</span>
+                    </div>
+                    <div class="ai-header-info">
+                        <h3>JM's AI Assistant</h3>
+                        <span class="status-online">Online</span>
+                    </div>
+                    <button id="aiCloseBtn" class="ai-close-btn">&times;</button>
+                </div>
+
+                <!-- Chat History -->
+                <div id="aiChatBody" class="ai-chat-body">
+                    <div class="message ai-message">
+                        <p>Hi! 👋 I'm John Michael's AI Assistant. Ask me anything about his skills, NetSuite experience, or projects!</p>
+                    </div>
+                </div>
+
+                <!-- Quick Prompt Chips -->
+                <div class="ai-chips">
+                    <button class="chip" data-prompt="What are John Michael's core competencies?">💡 Core Skills</button>
+                    <button class="chip" data-prompt="Tell me about his education and honors.">🎓 Education</button>
+                    <button class="chip" data-prompt="How can I contact him for a job?">📧 Contact Info</button>
+                </div>
+
+                <!-- Input Area -->
+                <form id="aiChatForm" class="ai-chat-footer">
+                    <input type="text" id="aiInput" placeholder="Ask AI something..." autocomplete="off" required>
+                    <button type="submit" class="ai-send-btn">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
